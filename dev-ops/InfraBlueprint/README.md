@@ -79,13 +79,13 @@ Requirements:
 
 Requirements:
 
-- [ ] A **Security Group** (`web-sg`) that allows:
+- [X] A **Security Group** (`web-sg`) that allows:
   - Inbound HTTP on port 80 from `0.0.0.0/0`
   - Inbound HTTPS on port 443 from `0.0.0.0/0`
   - Inbound SSH on port 22 from **your IP only** (use a variable, not a hardcoded IP)
   - All outbound traffic
-- [ ] An **EC2 instance** (`t2.micro`, Amazon Linux 2023) in one of the public subnets, attached to `web-sg`.
-- [ ] An **IAM Instance Profile** attached to the EC2 instance. The role must only allow `s3:GetObject` and `s3:PutObject` on the S3 bucket you create in Part 4 — nothing else.
+- [X] An **EC2 instance** (`t2.micro`, Amazon Linux 2023) in one of the public subnets, attached to `web-sg`.
+- [X] An **IAM Instance Profile** attached to the EC2 instance. The role must only allow `s3:GetObject` and `s3:PutObject` on the S3 bucket you create in Part 4 — nothing else.
 
 ---
 
