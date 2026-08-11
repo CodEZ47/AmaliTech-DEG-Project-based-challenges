@@ -9,9 +9,9 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "vela-terraform-state"
+    bucket = "vela-terraform-state-8272ks83k"
     key    = "vela-payments-staging/terraform.tfstate"
-    region = "us-east-1"
+    region = "ap-southeast-2"
   }
 }
 
