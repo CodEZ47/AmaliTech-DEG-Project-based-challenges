@@ -51,3 +51,9 @@ variable "vela_db_password" {
   type        = string
   sensitive   = true
 }
+
+variable "vela_skip_final_snapshot" {
+  description = "Whether to skip the final RDS snapshot on destroy."
+  type        = bool
+  default     = true
+}

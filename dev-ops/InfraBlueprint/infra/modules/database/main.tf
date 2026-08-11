@@ -43,5 +43,10 @@ resource "aws_db_instance" "vela_db" {
   vpc_security_group_ids = [aws_security_group.vela_db_sg.id]
 
   publicly_accessible = false
-#   skip_final_snapshot  = true
+  skip_final_snapshot       = var.vela_skip_final_snapshot
+  final_snapshot_identifier = "vela-db-final-${formatdate("YYYY-MM-DD-hhmm", timestamp())}"
+
+  lifecycle {
+    ignore_changes = [final_snapshot_identifier]
+  }
 }

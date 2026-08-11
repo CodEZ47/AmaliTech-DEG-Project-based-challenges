@@ -57,4 +57,5 @@ module "database" {
   vela_web_sg_id          = module.compute.vela_web_sg_id
   vela_db_username        = var.vela_db_username
   vela_db_password        = var.vela_db_password
+  vela_skip_final_snapshot = var.vela_skip_final_snapshot
 }

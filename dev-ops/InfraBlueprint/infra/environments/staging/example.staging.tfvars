@@ -26,3 +26,5 @@ vela_s3_bucket_name = "vela-payments-s3-example"
 vela_db_username = "REPLACE_ME"
 
 vela_db_password = "REPLACE_ME"
+
+vela_skip_final_snapshot = true
