@@ -8,12 +8,11 @@ terraform {
     }
   }
 
-  # Uncomment and configure once your S3 backend bucket exists.
-  # backend "s3" {
-  #   bucket = "your-terraform-state-bucket"
-  #   key    = "vela-payments/terraform.tfstate"
-  #   region = var.aws_region
-  # }
+  backend "s3" {
+    bucket = "vela-terraform-state"
+    key    = "vela-payments-staging/terraform.tfstate"
+    region = "us-east-1"
+  }
 }
 
 provider "aws" {
