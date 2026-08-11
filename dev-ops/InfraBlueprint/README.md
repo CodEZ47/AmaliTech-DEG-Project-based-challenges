@@ -64,12 +64,12 @@ All resources must live inside a **custom VPC** — not the default AWS VPC.
 
 Requirements:
 
-- [ ] A **VPC** with a CIDR block of `10.0.0.0/16`.
-- [ ] Two **public subnets** in different Availability Zones (for the EC2 instance).
-- [ ] Two **private subnets** in different Availability Zones (for the RDS instance).
-- [ ] An **Internet Gateway** attached to the VPC.
-- [ ] A **Route Table** for the public subnets that routes `0.0.0.0/0` through the Internet Gateway.
-- [ ] All resources tagged with `Project = "vela-payments"`.
+- [X] A **VPC** with a CIDR block of `10.0.0.0/16`.
+- [X] Two **public subnets** in different Availability Zones (for the EC2 instance).
+- [X] Two **private subnets** in different Availability Zones (for the RDS instance).
+- [X] An **Internet Gateway** attached to the VPC.
+- [X] A **Route Table** for the public subnets that routes `0.0.0.0/0` through the Internet Gateway.
+- [X] All resources tagged with `Project = "vela-payments"`.
 
 ---
 
