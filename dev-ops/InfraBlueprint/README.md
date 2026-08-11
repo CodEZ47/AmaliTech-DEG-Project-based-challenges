@@ -95,10 +95,10 @@ Requirements:
 
 Requirements:
 
-- [ ] A **Security Group** (`db-sg`) that allows inbound traffic on port 5432 (PostgreSQL) **only from `web-sg`** — not from the internet.
-- [ ] An **RDS instance** (`db.t3.micro`, PostgreSQL 15) in the private subnets.
-- [ ] The database username and password must be passed in as **Terraform variables**. They must never appear as default values in the code.
-- [ ] The RDS instance must **not** be publicly accessible.
+- [X] A **Security Group** (`db-sg`) that allows inbound traffic on port 5432 (PostgreSQL) **only from `web-sg`** — not from the internet.
+- [X] An **RDS instance** (`db.t3.micro`, PostgreSQL 15) in the private subnets.
+- [X] The database username and password must be passed in as **Terraform variables**. They must never appear as default values in the code.
+- [X] The RDS instance must **not** be publicly accessible.
 
 > **Cost note:** RDS `db.t3.micro` is included in the AWS free tier (750 hours/month for 12 months). Destroy it when you are done with `terraform destroy`.
 
